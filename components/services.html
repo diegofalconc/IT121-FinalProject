@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jumbo Taco</title>
+    <script src="../js/scripts.js" defer></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1 class="header">Jumbo Taco</h1>
+            <nav class="navbar">
+                <a href="../index.html">Home</a>
+                <a href="services.html">Make Your Taco</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <aside>
+            <img onmouseover="alert('Your jumbo taco is sad, add more ingredients')" id="tacoImage" src="../images/sadtaco.jpg">
+            <img onmouseover="alert('Your jumbo taco is better, but it could use more ingredients')" id="tacoImage2" src="../images/happytaco.png">
+            <img onmouseover="alert('Your jumbo taco is ready, place your order')" id="tacoImage3" src="../images/excitedtaco.jpg">
+            <label id="tacoUpdate">Move your mouse over the Taco</label>
+        </aside>
+        <form>
+            <fieldset id="fieldWrap">
+                <legend>Choose your wrapping</legend>
+                <input type="radio" name="answer" onclick="showVeggies()">
+                <label>Corn Tortilla</label>
+                <input type="radio" name="answer" onclick="showVeggies()">
+                <label>Flour Tortilla</label>
+                <input type="radio" name="answer" onclick="showVeggies()">
+                <label>Half and Half Tortilla</label>
+                <input type="radio" name="answer" onclick="showVeggies()">
+                <label>Spanish Tortilla</label>
+                <input type="radio" name="answer" onclick="showVeggies()">
+                <label>Lettuce Wrap</label>
+            </fieldset>
+
+        </form>
+
+
+
+        <form>
+            <fieldset id="fieldVeggies">
+                <legend>Pick your veggies</legend>
+                <input type="checkbox" id="lettuceID" name="lettuce" onclick="showMeat()">
+                <label>Lettuce</label>
+                <input type="checkbox" id="cucumbersID" name="cucumbers" onclick="showMeat()">
+                <label>Cucumbers</label>
+                <input type="checkbox" id="broccoliID" name="broccoli" onclick="showMeat()">
+                <label>Broccoli</label>
+                <input type="checkbox" id="carrotID" name="carrot" onclick="showMeat()">
+                <label>Carrot</label>
+                <input type="checkbox" id="onionID" name="onion" onclick="showMeat()">
+                <label>Onions</label>
+                <input type="checkbox" id="cabbageID" name="cabbage" onclick="showMeat()">
+                <label>Cabbage</label>
+                <input type="checkbox" id="tomatoID" name="tomato" onclick="showMeat()">
+                <label>Tomato</label>
+                <input type="checkbox" id="picklesID" name="pickles" onclick="showMeat()">
+                <label>Pickles</label>
+            </fieldset>
+            <label id="vegetableLimit">Please select at least 3 vegetables</label>
+        </form>
+
+
+        <form>
+            <fieldset id="fieldMeat">
+                <legend>Pick your Tacotagonists</legend>
+                <input type="checkbox" name="beef" id="beefID" onclick="showSubmit()">
+                <label>Beef</label>
+                <input type="checkbox" name="bushmeat" id="bushmeatID" onclick="showSubmit()">
+                <label>Bushmeat</label>
+                <input type="checkbox" name="chicken" id="chickenID" onclick="showSubmit()">
+                <label>Chicken</label>
+                <input type="checkbox" name="duck" id="duckID" onclick="showSubmit()">
+                <label>Duck</label>
+                <input type="checkbox" name="goose" id="gooseID" onclick="showSubmit()">
+                <label>Goose</label>
+                <input type="checkbox" name="lamb" id="lambID" onclick="showSubmit()">
+                <label>Lamb</label>
+                <input type="checkbox" name="partridge" id="partidgeID" onclick="showSubmit()">
+                <label>Partridge</label>
+                <input type="checkbox" name="pork" id="porkID" onclick="showSubmit()">
+                <label>Pork</label>
+                <input type="checkbox" name="rabbit" id="rabbitID" onclick="showSubmit()">
+                <label>Rabbit</label>
+            </fieldset>
+            <label id="meatLimit">Please select at least 5 ingredients</label>
+        </form>
+
+
+
+        <button id="tacoOrder" onclick="submitTaco()">Place your Order</button>
+
+        <footer>
+            <small>&copy; 2018 - 2021   ---All Rights Reserved ~ Authored by Diego Falcon</small>
+        </footer>
+    </div>
+</body>
+
+</html>
